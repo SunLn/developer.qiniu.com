@@ -1253,9 +1253,6 @@ div.api-resource .social-resource .author {
 .container.index .side-bar .question ul li:first-child {
   padding-top: 0;
 }
-.container.index .side-bar .resource-community {
-  height: 333px;
-}
 .container.index .side-bar .resource-community span {
   display: inline-block;
   vertical-align: top;
@@ -1263,7 +1260,6 @@ div.api-resource .social-resource .author {
 }
 .container.index .side-bar .resource-community > div {
   margin-top: 23px;
-  height: 55px;
 }
 .container.index .side-bar .resource-community h4 {
   font-weight: normal;
@@ -1286,6 +1282,7 @@ div.api-resource .social-resource .author {
 }
 .container.index .side-bar .resource-community > p {
   text-align: right;
+  margin-top: 23px;
 }
 .container.index .cell,
 .container.docs .cell {

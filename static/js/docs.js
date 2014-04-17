@@ -1,4 +1,5 @@
 /* global hljs */
+/* global ZeroClipboard */
 var DocsAddResource;
 var DocsFeedback;
 
@@ -601,5 +602,31 @@ $(function() {
     //hack  ,hide javascript sdk link in api-index.html
     $('.container.api .side-bar').find('#JavaScript-sdk').parent().remove();
     //hack  ,remove javascript sdk link of siderbar in api page
+
+    // $('.copy-button').each(function() {
+    //     $(this).data("clipboard-text", $(this).attr("href"));
+    // });
+
+    ZeroClipboard.config({
+        "moviePath": '/static/add-on/zeroclipboard/ZeroClipboard.swf'
+    });
+
+    var client = new ZeroClipboard($(".copy-button"));
+
+    client.on("load", function(readyEvent) {
+        console.log("ZeroClipboard SWF is ready!");
+
+        client.on('dataRequested', function(client, args) {
+            // client.setText($(this).attr('href'));
+        }).on("complete", function(client, args) {
+            // `this` === `client`
+            // `event.target` === the element that was clicked
+            // event.target.style.display = "none";//
+            console.log("Copied text to clipboard: ", args.text);
+        }).on("mousedown", function(client, args) {
+            // console.log(client, args);
+        });
+    });
+
 
 });

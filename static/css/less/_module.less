@@ -1,11 +1,13 @@
 body {
     font-family: Arial,'微软雅黑';
     background-color: #F5F5F5;
-    font-size: 12px;
+    font-size: 62.5%;
+    font-size: 16px;
+    font-size: 1em;
 }
 
 h2 {
-    font-size: 16px;
+    font-size: 1.6em;
     font-weight: bold;
     color: rgb(38,38,38);
 }
@@ -14,13 +16,13 @@ h3 {
     color: rgb(64,64,64);
 }
 h3.en {
-    font-size: 13px;
+    font-size: 1.3em;
 }
 h3.cn {
-    font-size: 12px;
+    font-size: 1.2em;
 }
 h4,h5,h6{
-    font-size: 12px;
+    font-size: 1.2em;
 }
 a.more {
     color: rgb(153,153,153);
@@ -29,7 +31,8 @@ a.more {
 .container {
     margin-right: auto;
     margin-left: auto;
-    width: 960px;
+    max-width: 960px;
+    width: 100%;
     padding-bottom: 1px;
 }
 .container:after {
@@ -62,7 +65,7 @@ a.more {
     margin-bottom:5px;
     h2 {
         font-weight: bold;
-        font-size: 16px;
+        font-size: 1.6em;
     }
 }
 
@@ -111,7 +114,7 @@ a.more {
     }
     .cell:first-child {
         margin-left: 0;
-    } 
+    }
 }
 
 //文档具体页侧边栏样式
@@ -123,7 +126,7 @@ a.more {
         height: 36px;
         line-height: 36px;
         background-color: #FAFAFA;
-        font-size: 12px;
+        font-size: 1.2em;
         padding: 0 0 0 25px;
         text-align: left;
         a {
@@ -131,18 +134,18 @@ a.more {
             display: inline-block;
             width: 233px;
             cursor: pointer;
-            height: 36px;       
+            height: 36px;
             &.active {
                 font-weight: bold;
-            }                 
+            }
         }
-    }    
+    }
     >.panel-heading {
         cursor: pointer;
         height: 36px;
         line-height: 36px;
         background-color: #FAFAFA;
-        font-size: 14px;
+        font-size: 1.4em;
         padding:0 25px;
         text-align: right;
         border-top:1px solid @233;
@@ -154,14 +157,14 @@ a.more {
             float: left;
             &.active {
                 font-weight: bold;
-            } 
-        }                
+            }
+        }
     }
     >.panel-body {
         padding-left: 25px;
         background-color: #FFF;
         border-top:1px solid @233;
-        display: none; 
+        display: none;
         .level-one {
             >li {
                 margin:10px 0;
@@ -171,7 +174,7 @@ a.more {
                 }
                 span.api_unselect_sprited ,span.api_selected_sprited {
                     margin-top: -3px;
-                }                
+                }
                 .panel-heading  h5{
                     padding-right: 25px;
                     line-height: 21px;
@@ -181,31 +184,31 @@ a.more {
                         margin-left: 3px;
                         display: inline-block;
                         width: 165px;
-                        &.active {                            
+                        &.active {
                             color: rgb(12,148,222);
                         }
                     }
                     span {
-                        display: inline-block;     
-                        cursor: pointer;                   
-                    }    
+                        display: inline-block;
+                        cursor: pointer;
+                    }
                     .menu_down {
                         float: right;
                         position: absolute;
                         top: 10px;
                         right: 27px;
-                    }                
+                    }
                 }
                 .panel-body {
                     margin-left: 20px;
                     display: none;
                     .level-two {
-                        li {                       
+                        li {
                             &.active {
                                 >a {
                                     color:@64;
                                 }
-                            }                            
+                            }
                         }
                     }
                     .level-four {
@@ -214,7 +217,7 @@ a.more {
                 }
             }
 
-        }        
+        }
         li {
             line-height: 21px;
             a {
@@ -225,11 +228,11 @@ a.more {
             }
             .link.active {
                 color: rgb(12,148,222);
-            }                      
+            }
         }
         li.active,a.active{
             color: @64;
-        }       
+        }
     }
 
     .level-three{
@@ -242,7 +245,7 @@ a.more {
     }
     &:first-child {
         .panel-heading    {
-             border-top: none;           
+             border-top: none;
         }
     }
 }
